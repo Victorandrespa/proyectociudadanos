@@ -1,0 +1,13 @@
+.table-responsive-fixed {
+    max-height: 800px;
+    /* Ajusta la altura que necesites */
+    overflow-y: auto;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    /* Fondo blanco para que no se mezcle al hacer scroll */
+    z-index: 1;
+}
