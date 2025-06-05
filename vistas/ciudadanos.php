@@ -8,6 +8,7 @@
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="../main/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Ciudadanos</title>
 
 </head>
@@ -41,7 +42,7 @@
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content animate__animated animate__bounceInLeft">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Agrega un Registro</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -120,7 +121,7 @@
             <tbody>
                 <?php
                 while ($datos = mysqli_fetch_assoc($ejecutar)) {
-                    ?>
+                ?>
                     <tr>
                         <td><?php echo $datos["dpi"]; ?></td>
                         <td><?php echo $datos["nombre"]; ?></td>
@@ -143,12 +144,11 @@
                             </form>
                         </td>
                     </tr>
-                    <?php
+                <?php
                 }
                 ?>
             </tbody>
         </table>
-
     </div>
 
     <footer>

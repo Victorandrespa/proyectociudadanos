@@ -29,6 +29,11 @@
 
     <h1 class="m-5">Editar Municipio</h1>
 
+    <div class="d-flex flex-row">
+        <a href="../vistas/municipios.php" class="btn btn-outline-danger m-1 ms-5 p-2">Volver</a>
+    </div>
+
+
 
     <div class="m-5">
 
